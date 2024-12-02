@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Application</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+</head>
+<body>
+    <header class ="header">
+        <h1>Welcome to Auto Pulse</h1>
+        <img src="https://www.animatedimages.org/data/media/425/animated-bus-image-0022.gif" border="0" alt="animated-bus-image-0022" />
+        <nav>
+            <ul>
+                
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="containersss">
+      <h1>Powerful and Easy-to-Use Email Sender</h1>
+      <p>Send bulk emails effortlessly with our user-friendly platform.</p>
+      <a href="{{ url_for('login') }}" class="btn-primary">Get Started for Free</a>
+    </div>
+  </header>
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="containerssss">
+      <h2>Why Choose Us?</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <img src="{{url_for('static',filename='simple.png')}}" alt="Image">
+          <h3>Easy To use.</h3>
+        </div>
+        <div class="feature-item">
+            <img src="{{url_for('static',filename='clock.jpg')}}" alt="Image">
+          <h3>Faster service.</h3>
+          
+        </div>
+        <div class="feature-item">
+            <img src="{{url_for('static',filename='start.jpg')}}" alt="Image">
+          <h3>Free to Start</h3>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="integration-section">
+    <div class="containerssss">
+      <h1>Bulk email service integration with tools you already use</h1>
+      <p>
+        Sender's email marketing software instantly integrates with leading content management
+        systems, CRMs, and ecommerce platforms, including WordPress, PrestaShop, WooCommerce, 
+        Zapier, and more.
+      </p>
+ <!-- Hero Section -->
+ <section class="heros">
+    <div class="containerssss">
+      <h1><pre>Beat the spam filters with our mass 
+  email service</pre></h1>
+      <p>
+        Boost your reach and engagement using our bulk email sender to send mass emails. 
+        Our robust infrastructure and best bulk email delivery ensure your mass email campaign 
+        lands directly in your audience's inbox, not their spam folder.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="featuress">
+    <div class="containers">
+      <div class="feature-items">
+        <img src="{{url_for('static',filename='image1.png')}}" alt="High IP reputation">
+        <h3>High IP reputation</h3>
+      </div>
+      <div class="feature-items">
+        <img src="{{url_for('static',filename='image copy.png')}}" alt="GDPR-compliant infrastructure">
+        <h3>GDPR-compliant infrastructure</h3>
+      </div>
+      <div class="feature-items">
+        <img src="{{url_for('static',filename='image copy 2.png')}}" alt="Reliable email infrastructure">
+        <h3>Reliable email infrastructure</h3>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-sections">
+        <!-- About Section -->
+        <div class="footer-about">
+          <h3>About Us</h3>
+          <p>
+            We provide a reliable bulk email service to help you engage your audience and grow your business. 
+            Experience fast and secure email marketing with our platform.
+          </p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Section -->
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: <a href="shashank212020@gmail.com">shashank212020@gmail.com</a></p>
+          <p>Phone: <a href="tel:+123456789">+9129345678</a></p>
+          <!-- <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+          </div> -->
+        </div>
+      </div>
+  
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 AutoPulse. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

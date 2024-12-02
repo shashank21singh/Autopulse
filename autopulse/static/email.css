@@ -1,0 +1,91 @@
+/* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-image: url("image.jpg");
+    background-size:contain;
+    font-family: 'Arial', sans-serif;
+    
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    opacity:100%;
+    background: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Smooth shadow */
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    
+    margin-bottom: 24px;
+    margin-left: 18%;
+    color: #007bff; /* Highlighted header color */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+/* Inputs and Textarea */
+textarea,
+input {
+    font-size: 1rem;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus,
+input:focus {
+    border-color: #007bff; /* Border color on focus */
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    font-size: 1.1rem;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+/* Label Styling */
+label {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 5px;
+}

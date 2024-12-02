@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Bulk Emails</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='email.css') }}">
+</head>
+<body>
+    <div class="container">
+        <a href="{{url_for('index')}}">Home</a>
+        <h1><b><u>Send Bulk Emails</u></b></h1>
+        <form method="POST">
+            <label for="sender_email">Sender Email:</label>
+            <input id="sender_email" name="sender_email" type="email" placeholder="Enter your email..." required>
+            
+            <label for="password">Email Password:</label>
+            <input id="password" name="password" type="password" placeholder="Enter gmail password should be app password..." required>
+            
+            <label for="emails">Recipient Emails (comma-separated):</label>
+            <textarea id="emails" name="emails" rows="5" placeholder="Enter recipient emails, separated by commas..." required></textarea>
+            
+            <label for="subject">Subject:</label>
+            <input id="subject" name="subject" type="text" placeholder="Enter email subject..." required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="8" placeholder="Enter your message here..." required></textarea>
+            
+            <button type="submit">Send Emails</button>
+        </form>
+    </div>
+</body>
+</html>
